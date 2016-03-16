@@ -3,6 +3,7 @@
 #include "ui/CocosGUI.h"
 #include "UtilsLabel.h"
 USING_NS_CC;
+#include "CGesture.h"
 
 using namespace cocostudio::timeline;
 
@@ -43,6 +44,48 @@ bool HelloWorld::init()
     
     UtilsLabel::runLabelValueToValue(label, 100, 99999, 5);
 
+    auto bg = Sprite::create("icon_camera.jpg");
+    bg->setPosition(200,200);
+    this->addChild(bg);
+    
+    auto tap = CGesture::createTapGesture(bg,[=](Touch*touch){
+    
+        CCLOG("tap...");
+    },1);
+    this->addChild(tap);
+
+    auto longPress = CGesture::createLongPressGesture(bg,[=](Touch*touch)
+    {
+        CCLOG("long pressed call...");
+    });
+    this->addChild(longPress);
+
+    auto swipe = CGesture::createSwipeGesture(bg,[=](Touch *touch,GestureDirection dir)
+    {
+        switch (dir) {
+            case kDirectUp:
+                CCLOG("swipe up...");
+                break;
+            case kDirectDown:
+                CCLOG("swipe down...");
+                break;
+            case kDirectLeft:
+                CCLOG("swipe left...");
+                break;
+            case kDirectRight:
+                CCLOG("swipe right");
+                break;
+            default:
+                break;
+        }
+    });
+    this->addChild(swipe);
+    
+    auto pan = CGesture::createPanGestrue(bg,[=](Touch *touch)
+    {
+        bg->setPosition(bg->getPosition()+touch->getDelta());
+    });
+    this->addChild(pan);
     
     return true;
 }

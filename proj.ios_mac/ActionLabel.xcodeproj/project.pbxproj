@@ -53,6 +53,9 @@
 		B65B4F94A3BF1EC5CB00022A /* res in Resources */ = {isa = PBXBuildFile; fileRef = 55014BDBA322584F88CF3D18 /* res */; };
 		BA18E8121C8D6BEF005F9469 /* ActionLabelValueTo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA18E8101C8D6BEF005F9469 /* ActionLabelValueTo.cpp */; };
 		BA18E8171C8D739B005F9469 /* UtilsLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA18E8151C8D739B005F9469 /* UtilsLabel.cpp */; };
+		BA4CE7031C9808A9005D46A3 /* CGesture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4CE7011C9808A9005D46A3 /* CGesture.cpp */; };
+		BAA8E8DB1C8EE77F0019C44A /* hp_jineng.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA8E8DA1C8EE77F0019C44A /* hp_jineng.png */; };
+		BAA8E8DD1C8EE88F0019C44A /* icon_camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAA8E8DC1C8EE88F0019C44A /* icon_camera.jpg */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -118,6 +121,10 @@
 		BA18E8111C8D6BEF005F9469 /* ActionLabelValueTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionLabelValueTo.h; sourceTree = "<group>"; };
 		BA18E8151C8D739B005F9469 /* UtilsLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UtilsLabel.cpp; sourceTree = "<group>"; };
 		BA18E8161C8D739B005F9469 /* UtilsLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsLabel.h; sourceTree = "<group>"; };
+		BA4CE7011C9808A9005D46A3 /* CGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGesture.cpp; sourceTree = "<group>"; };
+		BA4CE7021C9808A9005D46A3 /* CGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGesture.h; sourceTree = "<group>"; };
+		BAA8E8DA1C8EE77F0019C44A /* hp_jineng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hp_jineng.png; sourceTree = "<group>"; };
+		BAA8E8DC1C8EE88F0019C44A /* icon_camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon_camera.jpg; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -240,6 +247,8 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BAA8E8DC1C8EE88F0019C44A /* icon_camera.jpg */,
+				BAA8E8DA1C8EE77F0019C44A /* hp_jineng.png */,
 				55014BDBA322584F88CF3D18 /* res */,
 			);
 			name = Resources;
@@ -257,6 +266,8 @@
 				BA18E8161C8D739B005F9469 /* UtilsLabel.h */,
 				BA18E8101C8D6BEF005F9469 /* ActionLabelValueTo.cpp */,
 				BA18E8111C8D6BEF005F9469 /* ActionLabelValueTo.h */,
+				BA4CE7011C9808A9005D46A3 /* CGesture.cpp */,
+				BA4CE7021C9808A9005D46A3 /* CGesture.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -369,6 +380,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = E2JHP55T6E;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ActionLabel" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -400,6 +416,7 @@
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				BAA8E8DD1C8EE88F0019C44A /* icon_camera.jpg in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
@@ -409,6 +426,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				BAA8E8DB1C8EE77F0019C44A /* hp_jineng.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
@@ -440,6 +458,7 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				BA18E8171C8D739B005F9469 /* UtilsLabel.cpp in Sources */,
+				BA4CE7031C9808A9005D46A3 /* CGesture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
